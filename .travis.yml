@@ -1,2 +1,13 @@
+dist: focal
+language: bash
 script:
   - shellcheck *.sh
+branches:
+  only:
+    - master
+    - dev
+jobs:
+  include:
+    - stage: first
+      script:
+        - cat /etc/lsb-release
