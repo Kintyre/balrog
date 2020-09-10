@@ -4,5 +4,5 @@ a=$1
 
 for i in $(seq 1 1 5)
 do
-    echo $a $i
+    echo "$a $i"
 done
