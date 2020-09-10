@@ -1,6 +1,4 @@
-codeship-example:
+balrog:
   build:
-    image: codeship-example
+    image: balrog
     dockerfile: Dockerfile
-  environment:
-    EXAMPLE_ENV_VAR: example-var
