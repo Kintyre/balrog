@@ -1,4 +1,4 @@
-FROM ubuntu:zesty
+FROM ubuntu:bionic
 
 RUN apt-get install python3 python3-pip && \
     pip install pre-commit && \
