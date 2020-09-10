@@ -5,7 +5,7 @@
       command: printenv
     - service: codeship-example
       # shell wrapper not required unless passing along env vars or combining commands
-      command: /bin/bash -c 'ls -l /usr/src/app && echo ${CI_BUILD_ID}'
+      command: /bin/bash -c 'ls -l /usr/src/app && echo ${CI_BUILD_ID} && pre-commit run --all-files'
 - name: example-tagged-step
   tag: master
   service: codeship-example
