@@ -1,8 +1,7 @@
 FROM ubuntu:zesty
 
-RUN mkdir /usr/src/app
-WORKDIR /usr/src/app
-
+RUN pip install pre-commit && pre-commit install
 COPY . .
+RUN ls -l && pre-commit --version
 
 CMD ["printenv"]

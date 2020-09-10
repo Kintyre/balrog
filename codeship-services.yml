@@ -1,6 +1,6 @@
-codeship_example:
+codeship-example:
   build:
-    image: codeship_example
+    image: codeship-example
     dockerfile: Dockerfile
   environment:
     EXAMPLE_ENV_VAR: example-var
