@@ -1,7 +1,7 @@
 - type: parallel
   name: parallel-steps
   steps:
-    - service: balrog
+    - service: pre-commit
       command: printenv
-    - service: balrog
+    - service: pre-commit
       command: /bin/bash -c 'echo ${CI_BUILD_ID} && pre-commit run --all-files'

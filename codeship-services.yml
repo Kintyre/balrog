@@ -1,4 +1,4 @@
-balrog:
+pre-commit:
   build:
-    image: balrog
+    image: quail-hollow
     dockerfile: Dockerfile

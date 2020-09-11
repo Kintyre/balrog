@@ -1,10 +1,10 @@
 FROM ubuntu:focal
 
-RUN mkdir /usr/src/app
-WORKDIR /usr/src/app
+RUN mkdir /build
+WORKDIR /build
 COPY . .
 
-RUN cd /usr/src/app && \
+RUN cd /build && \
     apt-get update && \
     apt-get -y install git python3 python3-pip shellcheck && \
     pip3 install pre-commit && \
